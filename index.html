@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="brand">SUNNY KUMAR</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div id="particles-js"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 class="typewriter">
+          Hi, I'm <span id="tw-name"></span> 
+          
+        </h1>
+        <p class="typewriter-sub" id="tw-role"></p>
+        <a class="btn" href="#projects">View My Work</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="sunny.jpg" alt="Sunny">
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <!-- Replace with your own project images/titles/descriptions -->
+      <article class="project-card">
+        <h3>Memory-Card-Game</h3>
+        <p>Play and Win.</p>
+        <!-- new added -->
+        <a href="https://sunny-05.github.io/Memory-Card-Game/">Game-link</a> 
+      </article>
+      <article class="project-card">
+        <h3>Project Two</h3>
+        <p>Responsive dashboard with charts and filters.</p>
+      </article>
+      <article class="project-card">
+        <h3>Project Three</h3>
+        <p>eCommerce product gallery with smooth hover effects.</p>
+      </article>
+      <article class="project-card">
+        <h3>Project Four</h3>
+        <p>Portfolio SPA with routing and API integration.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required />
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <small class="error-message"></small>
+      </div>
+
+      <button type="submit" class="btn">Send</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> SUNNY. All rights reserved.</p>
+  </footer>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
